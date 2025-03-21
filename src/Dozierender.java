@@ -8,8 +8,8 @@ public class Dozierender {
         this.fakultaet=fakultaet;
         this.bueronummer=bueronummer;
     }
-    
-    public static void frageBeantworten(){
+
+    public void frageBeantworten(){
         System.out.println("Prof. Nestler");
     }
 }

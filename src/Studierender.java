@@ -7,9 +7,9 @@ public class Studierender {
         this.name=name;
         this.matrikelnummer=matrikelnummer;
         this.studiengang=studiengang;
-
     }
-    public static void frageStellen(){
+
+    public void frageStellen(){
         System.out.println("Lukas");
     }
 }

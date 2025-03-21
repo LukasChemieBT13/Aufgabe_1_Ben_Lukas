@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
-    Dozierender.frageBeantworten();
-    Studierender.frageStellen();
+    //Dozierender.frageBeantworten();
+    //Studierender.frageStellen();
 
     }
 }
