@@ -5,7 +5,6 @@ public class Dozierender {
     
     public static void frageBeantworten(){
         System.out.println("Prof. Nestler");
-
     }
 
 }
