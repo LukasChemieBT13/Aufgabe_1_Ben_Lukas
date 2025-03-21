@@ -3,6 +3,12 @@ public class Studierender {
     private int matrikelnummer;
     private String studiengang;
 
+    public Studierender(){
+        this.name=name;
+        this.matrikelnummer=matrikelnummer;
+        this.studiengang=studiengang;
+
+    }
     public static void frageStellen(){
         System.out.println("Lukas");
     }
