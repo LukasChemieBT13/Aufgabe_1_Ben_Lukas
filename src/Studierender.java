@@ -3,7 +3,7 @@ public class Studierender {
     private int matrikelnummer;
     private String studiengang;
 
-    public void frageStellen(){
-        
+    public static void frageStellen(){
+        System.out.println("Lukas");
     }
 }
