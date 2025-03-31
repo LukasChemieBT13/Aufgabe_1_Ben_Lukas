@@ -1,14 +1,15 @@
 public class Dozierender {
     private String name;
-    private char fakultaet;
+    private String fakultaet;
     private String bueronummer;
-    private String[] feedback;
+    private String letztesFeedback;
 
     //Konstruktor für die Klasse Dozierender
-    public Dozierender(String name, char fakultaet, String bueronummer){
+    public Dozierender(String name, String fakultaet, String bueronummer){
         this.name=name;
         this.fakultaet=fakultaet;
         this.bueronummer=bueronummer;
+        this.letztesFeedback=null;
     }
 
     //getter Methode für Namen
@@ -22,14 +23,14 @@ public class Dozierender {
     }
 
     //Aufgabe 3
-    public boolean sprechstundeoke(String date, String room, Dozierender dozierender, String uhrzeit){
-        System.out.println("Hier mit bestätige ich Ihre Sprechstunde am "+ date + " um " + uhrzeit + " VG" + getName());
+    public boolean sprechstundeoke(String datum, String raum, String uhrzeit) {
+        System.out.println("Hiermit bestätige ich Ihre Sprechstunde am " + datum + " um " + uhrzeit + ". VG, " + getName());
         return true;
     }
 
     //Aufgabe 3
     public void feedbackErhalten(Studierender studierender, String feedback, String date){
         System.out.println("Sie haben folgendes Feedback: " + feedback + "von "+ studierender.getName()+ "erhalten.");
-        this.feedback[0]=feedback;
+        this.letztesFeedback=feedback;
     }
 }

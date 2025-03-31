@@ -1,41 +1,48 @@
 public class Lehrveranstaltung {
     public String titel;
     public Dozierender dozierender;
-    public String [] teilnehmer;
+    public Studierender[] teilnehmer;
     public Vorlesungsstunde vorlesungsstunde;
     public Praktikumsstunde praktikumsstunde;
 
     //Konstruktor für Lehrveranstaltung
-    public Lehrveranstaltung(String titel, Dozierender dozierender, String [] teilnehmer, Vorlesungsstunde vorlesungsstunde, Praktikumsstunde praktikumsstunde){
-        this.titel=titel;
-        this.dozierender=dozierender;
-        this.teilnehmer=teilnehmer;
-        this.vorlesungsstunde=vorlesungsstunde;
-        this.praktikumsstunde=praktikumsstunde;
+    public Lehrveranstaltung(String titel, Dozierender dozierender, int maxTeilnehmer) {
+        this.titel = titel;
+        this.dozierender = dozierender;
+        this.teilnehmer = new Studierender[maxTeilnehmer]; // Feste Größe für Teilnehmerliste
+        this.vorlesungsstunde = null;
+        this.praktikumsstunde = null;
     }
 
     //Aufgabe 4
-    public void hinzufügenStudierende(Studierender studierender, int nummer){
-        
-        if(teilnehmer[nummer]==null){
-            this.teilnehmer[nummer]=studierender.getName();
-            System.out.println("Der Teilnehmer " + studierender.getName() + "wurde erfolgreich hinzugefügt.");
-        } else {
-            System.out.println("Diese Studentennummer ist bereits vergeben!");
+    public void hinzufuegenStudierenden(Studierender studierender) {
+        for (int i = 0; i < teilnehmer.length; i++) {
+            if (teilnehmer[i] == null) { // Freien Platz suchen
+                teilnehmer[i] = studierender;
+                System.out.println(studierender.getName() + " wurde zur Lehrveranstaltung hinzugefügt.");
+                return;
+            }
         }
-
+        System.out.println("Kein Platz mehr frei für " + studierender.getName());
     }
 
     //Aufgabe 4
-    public void entferneStudierende(int nummer){
-
-        if(teilnehmer[nummer]==null){
-            System.out.println("Dieser Student wurde bereits entfertn!");
-        } else{
-            teilnehmer[nummer]=null;
-            System.out.println("Sie haben den Teilnehmer mit der Nummer "+ nummer+ " erfolgreich entfertn.");
+    public void entfernenStudierenden(Studierender studierender) {
+        for (int i = 0; i < teilnehmer.length; i++) {
+            if (teilnehmer[i] != null && teilnehmer[i].getName().equals(studierender.getName())) {
+                teilnehmer[i] = null;
+                System.out.println(studierender.getName() + " wurde aus der Lehrveranstaltung entfernt.");
+                return;
+            }
         }
+        System.out.println(studierender.getName() + " ist nicht in der Lehrveranstaltung.");
+    }
 
+    //Aufgabe 4
+    public void anzeigeTeilnehmer(){
+        for (int i =0; i< teilnehmer.length; i++){
+                System.out.println(teilnehmer[i]);
+        }
     }
 
     //Aufgabe 4

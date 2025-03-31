@@ -22,15 +22,15 @@ public class Studierender {
     }
 
     //Aufgabe 3 
-    public void sprechStundenanfrage (String date, String room, Dozierender dozierender, String uhrzeit){
-        System.out.println(this.name + "bittet um eine Spreckstunde am " + date + " um " + uhrzeit+ " bei Ihnen." );
-        dozierender.sprechstundeoke(date, room, dozierender, uhrzeit);
+    public void sprechStundenanfrage(String datum, String raum, Dozierender dozierender, String uhrzeit) {
+        System.out.println(this.name + " bittet um eine Sprechstunde am " + datum + " um " + uhrzeit + " bei " + dozierender.getName());
+        dozierender.sprechstundeoke(datum, raum, uhrzeit);
     }
 
     //Aufgabe 3
-    public void feedbackGeben(Dozierender dozierender, String name, String feedback){
+    public void feedbackGeben(Dozierender dozierender, String name, String feedback, String date){
         System.out.println("Sie geben folgendes Feedback "+ feedback + "an den Dozenten " + dozierender.getName() +".");
-        dozierender.feedbackErhalten(this, feedback, feedback);
+        dozierender.feedbackErhalten(this, feedback, date);
     }
 
     
