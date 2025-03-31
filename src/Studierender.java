@@ -33,5 +33,11 @@ public class Studierender {
         dozierender.feedbackErhalten(this, feedback, date);
     }
 
+    //Aufgabe 4
+    public void anmeldenfürVeranstaltung(Lehrveranstaltung kurs){
+        System.out.println("Sie versuchen sich für den Kurs " + kurs + "einzuschreiben.");
+        kurs.hinzufuegenStudierenden(this);
+    }
+
     
 }
