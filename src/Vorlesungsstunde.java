@@ -11,6 +11,14 @@ public class Vorlesungsstunde {
         this.uhrzeit=uhrzeit;
         this.raum=raum;
     }
-    
+
+    public void zeigDetails(){
+        System.out.println("Die Infos zur Vorlesungsstunde: ");
+        System.out.println("Thema: "+ this.thema);
+        System.out.println("Datum: " + this.datum);
+        System.out.println("Uhrzeit: "+ this.uhrzeit);
+        System.out.println("Raum: "+ this.raum);
+    }
+
 
 }
