@@ -14,6 +14,7 @@ public class Praktikumsstunde {
         this.aufgabe=aufgabe;
     }
 
+    //Aufgabe 4
     public void zeigDetails(){
         System.out.println("Die Infos zur Praktikumsstunde: ");
         System.out.println("Thema: "+ this.thema);

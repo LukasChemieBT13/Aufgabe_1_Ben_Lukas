@@ -12,6 +12,7 @@ public class Vorlesungsstunde {
         this.raum=raum;
     }
 
+    //Aufgabe 4
     public void zeigDetails(){
         System.out.println("Die Infos zur Vorlesungsstunde: ");
         System.out.println("Thema: "+ this.thema);
