@@ -23,6 +23,6 @@ public class App {
         
         swe.anzeigeTeilnehmer();
 
-        student3.anmeldenfürVeranstaltung(swe);
+        //student3.anmeldenfürVeranstaltung(swe);
     }
 }
