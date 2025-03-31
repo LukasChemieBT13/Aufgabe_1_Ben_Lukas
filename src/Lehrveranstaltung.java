@@ -40,8 +40,12 @@ public class Lehrveranstaltung {
 
     //Aufgabe 4
     public void anzeigeTeilnehmer(){
-        for (int i =0; i< teilnehmer.length; i++){
-                System.out.println(teilnehmer[i]);
+        for (int i = 0; i < teilnehmer.length; i++) {
+            if (teilnehmer[i] != null) {
+                System.out.println("- " + teilnehmer[i].getName()); // Rufe `getName()` korrekt auf!
+            } else {
+                System.out.println("- (frei)"); // Falls es leere Plätze gibt
+            }
         }
     }
 
@@ -54,7 +58,7 @@ public class Lehrveranstaltung {
     //Aufgabe 4
     public void erzeugePraktikumsstunde(String thema, String datum, String uhrzeit, String raum, String aufgabe) {
         Praktikumsstunde praktikum = new Praktikumsstunde(thema, datum, uhrzeit, raum, aufgabe);
-        System.out.println("Eine neue Praktikumsstunde wurde erstellt:" +thema);
+        System.out.println("Eine neue Praktikumsstunde wurde erstellt: " +thema);
     }
 
 
