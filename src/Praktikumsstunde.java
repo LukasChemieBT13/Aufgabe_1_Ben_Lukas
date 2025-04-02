@@ -1,9 +1,9 @@
 public class Praktikumsstunde {
-    public String thema;
-    public String datum;
-    public String uhrzeit;
-    public String raum;
-    public String aufgabe;
+    private String thema;
+    private String datum;
+    private String uhrzeit;
+    private String raum;
+    private String aufgabe;
 
     //Konstruktor für die Klasse Praktikumsstunde
     public Praktikumsstunde(String thema, String datum, String uhrzeit, String raum, String aufgabe){

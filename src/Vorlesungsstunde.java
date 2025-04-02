@@ -1,8 +1,8 @@
 public class Vorlesungsstunde {
-    public String thema;
-    public String datum;
-    public String uhrzeit;
-    public String raum;
+    private String thema;
+    private String datum;
+    private String uhrzeit;
+    private String raum;
 
     //Konstruktor für die Klasse Vorlesungsstunde
     public Vorlesungsstunde(String thema, String datum, String uhrzeit, String raum){

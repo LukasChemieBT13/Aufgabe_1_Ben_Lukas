@@ -1,9 +1,9 @@
 public class Lehrveranstaltung {
-    public String titel;
-    public Dozierender dozierender;
-    public Studierender[] teilnehmer;
-    public Vorlesungsstunde vorlesungsstunde;
-    public Praktikumsstunde praktikumsstunde;
+    private String titel;
+    private Dozierender dozierender;
+    private Studierender[] teilnehmer;
+    private Vorlesungsstunde vorlesungsstunde;
+    private Praktikumsstunde praktikumsstunde;
 
     //Konstruktor für Lehrveranstaltung
     public Lehrveranstaltung(String titel, Dozierender dozierender, int maxTeilnehmer) {
