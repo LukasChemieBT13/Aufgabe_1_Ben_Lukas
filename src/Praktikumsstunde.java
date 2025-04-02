@@ -43,6 +43,7 @@ public class Praktikumsstunde {
         System.out.println("Uhrzeit: "+ this.uhrzeit);
         System.out.println("Raum: "+ this.raum);
         System.out.println("Aufgaben: " + this.aufgabe);
+        System.out.println("Ben ist der tollste!");
     }
 
 }
