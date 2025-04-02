@@ -12,7 +12,15 @@ public class Studierender {
 
     //getter Methode für Name
     public String getName(){
-        return name;
+        return this.name;
+    }
+
+    public int getMartikelnummer(){
+        return this.matrikelnummer;
+    }
+
+    public String getStudiengang(){
+        return this.studiengang;
     }
 
     //Aufgabe 2
@@ -29,7 +37,7 @@ public class Studierender {
 
     //Aufgabe 3
     public void feedbackGeben(Dozierender dozierender, String name, String feedback, String date){
-        System.out.println("Sie geben folgendes Feedback "+ feedback + "an den Dozenten " + dozierender.getName() +".");
+        System.out.println("Sie geben folgendes Feedback "+ feedback + " an den Dozenten " + dozierender.getName() +".");
         dozierender.feedbackErhalten(this, feedback, date);
     }
 

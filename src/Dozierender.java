@@ -12,9 +12,17 @@ public class Dozierender {
         this.letztesFeedback=null;
     }
 
-    //getter Methode für Namen
+    //getter Methoden
     public String getName(){
-        return name;
+        return this.name;
+    }
+
+    public String getFakultaet(){
+        return this.fakultaet;
+    }
+
+    public String getLetztesfeedback(){
+        return letztesFeedback;
     }
 
     //Aufgabe 2
