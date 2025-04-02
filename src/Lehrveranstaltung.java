@@ -14,6 +14,11 @@ public class Lehrveranstaltung {
         this.praktikumsstunde = null;
     }
 
+    //getter Mehtode
+    public String getTitel(){
+        return this.titel;
+    }
+    
     //Aufgabe 4
     public void hinzufuegenStudierenden(Studierender studierender) {
         for (int i = 0; i < teilnehmer.length; i++) {
