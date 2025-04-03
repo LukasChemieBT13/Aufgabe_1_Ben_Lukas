@@ -18,7 +18,46 @@ public class Lehrveranstaltung {
     public String getTitel(){
         return this.titel;
     }
+
+    public Dozierender getDozierender(){
+        return this.dozierender;
+    }
+
+    public Studierender[] getTeilnehmer(){
+        return this.teilnehmer;
+    }
+
+    public Vorlesungsstunde getVorlesungsstunde(){
+        return this.vorlesungsstunde;
+    }
+
+    public Praktikumsstunde getPraktikumsstunde(){
+        return this.praktikumsstunde;
+    }
+
+    //setter Methode
+    public void setTitle(String titel){
+        this.titel=titel;
+    }
+
+    public void setDozierender(Dozierender neuerDozent) {
+        this.dozierender = neuerDozent;
+    }
     
+    public void setTeilnehmer(Studierender[] teilnehmer){
+        this.teilnehmer=teilnehmer;
+    }
+
+    public void setVorlesungsstunde(Vorlesungsstunde vorlesungsstunde) {
+        this.vorlesungsstunde = vorlesungsstunde;
+    }
+    
+    public void setPraktikumsstunde(Praktikumsstunde praktikumsstunde) {
+        this.praktikumsstunde = praktikumsstunde;
+    }
+
+
+
     //Aufgabe 4
     public void hinzufuegenStudierenden(Studierender studierender) {
         for (int i = 0; i < teilnehmer.length; i++) {
@@ -65,11 +104,4 @@ public class Lehrveranstaltung {
         Praktikumsstunde praktikum = new Praktikumsstunde(thema, datum, uhrzeit, raum, aufgabe);
         System.out.println("Eine neue Praktikumsstunde wurde erstellt: " +thema);
     }
-
-
-
-
-
-
-
 }
