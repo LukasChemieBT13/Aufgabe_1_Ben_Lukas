@@ -73,7 +73,7 @@ public class Dozierender {
 
     //Aufgabe 3
     public void feedbackanzeigen(){
-        System.out.println("Hier hier bisheriges feedback:");
+        System.out.println("Hier bisheriges feedback:");
         
         for (int i=0; i< letztesFeedback.length;i++){
             System.out.println(letztesFeedback[i]);
