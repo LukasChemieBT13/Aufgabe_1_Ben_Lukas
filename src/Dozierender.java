@@ -79,4 +79,14 @@ public class Dozierender {
             System.out.println(letztesFeedback[i]);
         }
     }
+    
+    //Aufgabe 3
+    public void feedbackLoeschen(int stelle){
+        if (letztesFeedback[stelle] != null){
+            System.out.println("Feedback an Stelle " + stelle + " gelöscht");
+            letztesFeedback[stelle] = null;
+        } else {
+            System.out.println("An dieser Stelle ist kein Feedback vorhanden.");
+        }
+    }
 }
