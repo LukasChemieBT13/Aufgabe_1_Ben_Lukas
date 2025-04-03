@@ -3,7 +3,7 @@ public class Dozierender {
     private String fakultaet;
     private String bueronummer;
     private static int feedbackstelle;
-    private String [] letztesFeedback=new String[100]; //speicherplatz auf maximal 100 manuell gesetzt
+    private String [] letztesFeedback=new String[20]; //speicherplatz auf maximal 100 manuell gesetzt
 
     //Konstruktor für die Klasse Dozierender
     public Dozierender(String name, String fakultaet, String bueronummer){
