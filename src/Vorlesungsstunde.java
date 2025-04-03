@@ -4,7 +4,6 @@ public class Vorlesungsstunde {
     private String uhrzeit;
     private String raum;
 
-
     //Konstruktor für die Klasse Vorlesungsstunde
     public Vorlesungsstunde(String thema, String datum, String uhrzeit, String raum){
         this.thema=thema;
@@ -46,7 +45,7 @@ public class Vorlesungsstunde {
     public void setRaum(String raum){
         this.raum=raum;
     }
-    
+
     //Aufgabe 4
     public void zeigDetails(){
         System.out.println("Die Infos zur Vorlesungsstunde: ");

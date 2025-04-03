@@ -35,6 +35,27 @@ public class Praktikumsstunde {
         return this.aufgabe;
     }
 
+    //setter Methoden
+    public void setThema(String thema){
+        this.thema = thema;
+    }
+
+    public void setDatum(String datum){
+        this.datum=datum;
+    }
+
+    public void setUhrzeit(String uhrzeit){
+        this.uhrzeit=uhrzeit;
+    }
+
+    public void setRaum(String raum){
+        this.raum=raum;
+    }
+
+    public void setAufgabe(String aufgabe){
+        this.aufgabe=aufgabe;
+    }
+
     //Aufgabe 4
     public void zeigDetails(){
         System.out.println("Die Infos zur Praktikumsstunde: ");
