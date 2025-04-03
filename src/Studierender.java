@@ -10,7 +10,7 @@ public class Studierender {
         this.studiengang=studiengang;
     }
 
-    //getter Methode für Name
+    //getter Methoden
     public String getName(){
         return this.name;
     }
@@ -23,10 +23,24 @@ public class Studierender {
         return this.studiengang;
     }
 
+    //setter Methoden
+    public void setName(String name){
+        this.name=name;
+    }
+
+    public void setMartrikelnummer(int matrikelnummer){
+        this.matrikelnummer=matrikelnummer;
+    }
+
+    public void setStudiengang(String studiengang){
+        this.studiengang=studiengang;
+    }
+    
+
     //Aufgabe 2
     public void frageStellen(Dozierender dozierender, String frage){
         System.out.println("Der Student" + name + " stellt eine Frage an " + dozierender.getName() + ": " + frage);
-        dozierender.frageBeantworten(this);
+        //dozierender.frageBeantworten(this);
     }
 
     //Aufgabe 3 
