@@ -28,5 +28,7 @@ public class App {
         //Methoden der Dozierender testen
         dozent.feedbackErhalten(student3, "war gut", "24.12.2025");
         dozent.sprechstundeoke("20.04.2025", "B0-13", "12:30");
+        dozent.feedbackanzeigen();
+        
     }
 }
