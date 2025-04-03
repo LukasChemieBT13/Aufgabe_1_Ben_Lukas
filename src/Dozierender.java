@@ -57,7 +57,7 @@ public class Dozierender {
     //Aufgabe 3
     public void feedbackErhalten(Studierender studierender, String feedback, String date){
         
-        System.out.println("Sie haben folgendes Feedback: " + feedback + "von "+ studierender.getName()+ "erhalten.");
+        System.out.println("Sie haben folgendes Feedback: " + feedback + " von: "+ studierender.getName()+ " erhalten.");
         
         if (feedbackstelle < letztesFeedback.length){
             this.letztesFeedback[feedbackstelle] = feedback;

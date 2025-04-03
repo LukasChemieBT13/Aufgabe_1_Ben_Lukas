@@ -35,11 +35,11 @@ public class Studierender {
     public void setStudiengang(String studiengang){
         this.studiengang=studiengang;
     }
-    
+
 
     //Aufgabe 2
     public void frageStellen(Dozierender dozierender, String frage){
-        System.out.println("Der Student" + name + " stellt eine Frage an " + dozierender.getName() + ": " + frage);
+        System.out.println("Die/der Student/in " + name + " stellt eine Frage an " + dozierender.getName() + ": " + frage);
         //dozierender.frageBeantworten(this);
     }
 
@@ -51,13 +51,13 @@ public class Studierender {
 
     //Aufgabe 3
     public void feedbackGeben(Dozierender dozierender, String name, String feedback, String date){
-        System.out.println("Sie geben folgendes Feedback "+ feedback + " an den Dozenten " + dozierender.getName() +".");
+        System.out.println("Sie geben folgendes Feedback: "+ feedback + " an den Dozenten: " + dozierender.getName() +".");
         dozierender.feedbackErhalten(this, feedback, date);
     }
 
     //Aufgabe 4
     public void anmeldenfürVeranstaltung(Lehrveranstaltung kurs){
-        System.out.println("Sie versuchen sich für den Kurs " + kurs + "einzuschreiben.");
+        System.out.println("Sie versuchen sich für den Kurs " + kurs.getTitel() + " einzuschreiben.");
         kurs.hinzufuegenStudierenden(this);
     }
 
