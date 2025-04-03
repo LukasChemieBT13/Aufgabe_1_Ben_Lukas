@@ -14,7 +14,7 @@ public class Lehrveranstaltung {
         this.praktikumsstunde = null;
     }
 
-    //getter Mehtode
+    //getter Mehtoden
     public String getTitel(){
         return this.titel;
     }
@@ -35,7 +35,7 @@ public class Lehrveranstaltung {
         return this.praktikumsstunde;
     }
 
-    //setter Methode
+    //setter Methoden
     public void setTitle(String titel){
         this.titel=titel;
     }

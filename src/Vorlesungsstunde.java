@@ -30,6 +30,23 @@ public class Vorlesungsstunde {
         return this.raum;
     }
     
+    //setter Methoden
+    public void setThema(String thema){
+        this.thema = thema;
+    }
+
+    public void setDatum(String datum){
+        this.datum=datum;
+    }
+
+    public void setUhrzeit(String uhrzeit){
+        this.uhrzeit=uhrzeit;
+    }
+
+    public void setRaum(String raum){
+        this.raum=raum;
+    }
+    
     //Aufgabe 4
     public void zeigDetails(){
         System.out.println("Die Infos zur Vorlesungsstunde: ");
